@@ -1,0 +1,159 @@
+﻿/* This file is part of Messenger UWP.
+Copyright (C) 2019 Sylvain Bruyère
+
+Messenger UWP is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, version 3.
+
+Messenger UWP is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Messenger UWP.  If not, see <https://www.gnu.org/licenses/>. */
+
+
+/* Messenger V1: Restaure left panel */
+@media all and (max-width: 700px) {
+
+    /* Panel width */
+    ._1enh {
+        flex-basis: 25%;
+        min-width: 240px;
+    }
+    .safari.webkit ._1enh {
+        -webkit-flex-basis: 25%;
+    }
+
+    /* Top-left banner */
+        /* Space between buttons and title */
+        ._36ic {
+            justify-content: space-between;
+        }
+        .safari.webkit ._36ic {
+            -webkit-justify-content: space-between;
+        }
+
+        /* Title */
+        ._36ic ._1tqi, ._4d6r, ._6u29 {
+            display: block;
+        }
+        /*._4p9w ._36ic ._1tqi, ._4p9w ._4d6r {
+            display: initial;
+        }*/
+
+        /* Settings button */
+        ._4kzu {
+            display: block;
+        }
+        /*._4p9w ._4kzu {
+            display: initial
+        }*/
+
+    /* Conversation items */
+        /* Unread conversation */
+        ._1ht3._1ht1, ._1ht1._1ht2 {
+            background-color: #ffffff;
+            transition: none;
+        }
+
+        /* User name and message preview */
+        ._1ht5 ._1qt4, .safari.webkit ._1ht5 ._1qt4, .ie10 ._1ht5 ._1qt4 {
+            display: flex;
+        }
+
+        /* Viewed profile picture */
+        ._1ht1 ._2j6 {
+            display: flex;
+        }
+        /*._4p9w ._1ht1 ._2j6 {
+            display: initial
+        }*/
+
+    /* Search bar */
+    ._1nq2 {
+        display: block;
+    }
+    /*._4p9w ._1nq2 {
+        display: initial
+    }*/
+}
+
+
+/* Messenger V2: Restaure left panel */
+@media all and (max-width: 900px) {
+
+    /* Panel width */
+    ._1enh._7q1s {
+        flex-basis: 25%;
+        min-width: 285px;
+    }
+    .safari.webkit ._1enh._7q1s {
+        -webkit-flex-basis: 25%;
+    }
+
+    /* Top-left banner */
+        /* Space between buttons and title */
+        ._6-xk {
+            justify-content: initial;
+        }
+
+        /* Title */
+        ._6-xk ._6-xo, ._6-xv, ._6-xl {
+            display: block;
+        }
+
+        /* User picture */
+        ._7sta._87u_ {
+            display: flex;
+        }
+
+        /* New message button */
+        ._6-xp {
+            margin-left: 12px;
+        }
+
+        /* Settings button */
+        ._6ymu {
+            display: flex;
+        }
+
+    /* Conversation items */
+        /* Selected item padding */
+        ._6zkc {
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+
+        /* Item alignment */
+        ._7t1l {
+            justify-content: initial;
+        }
+
+        /* Profile picture margin*/
+        ._1ht1 ._1qt3._6-5k {
+            margin-right: 12px;
+        }
+
+        /* Unread conversation */
+        ._1ht3._1ht1._6zk9, ._1ht1._6zk9._1ht2 {
+            background-color: #ffffff;
+            transition: none;
+        }
+
+        /* User name and message preview */
+        ._1ht5 ._1qt4._7vuo, .safari.webkit ._1ht5 ._1qt4._7vuo, .ie10 ._1ht5 ._1qt4._7vuo {
+            display: flex;
+        }
+
+        /* Viewed profile picture */
+        ._1ht1 ._2j6._6zkg {
+            display: flex;
+        }
+
+    /* Search bar */
+    ._1nq2._7vup {
+        display: block;
+    }
+}

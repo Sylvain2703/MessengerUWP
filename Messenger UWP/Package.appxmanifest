@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- This file is part of Messenger UWP.
+Copyright (C) 2019 Sylvain Bruyère
+
+Messenger UWP is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, version 3.
+
+Messenger UWP is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Messenger UWP.  If not, see <https://www.gnu.org/licenses/>. -->
+
+<Package
+    xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
+    xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest"
+    xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
+    IgnorableNamespaces="uap mp">
+
+    <Identity Name="53330SSoft.MessengerUWP" Publisher="CN=C2230194-F9C4-4811-936E-C2BD4208FD18" Version="0.1.0.0" />
+    <mp:PhoneIdentity PhoneProductId="59435353-1be9-48a9-aaba-cfb9634454a1" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+
+    <Properties>
+        <DisplayName>Messenger UWP</DisplayName>
+        <PublisherDisplayName>SSoft</PublisherDisplayName>
+        <Logo>Assets\Store.png</Logo>
+    </Properties>
+
+    <Dependencies>
+        <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.14393.0" MaxVersionTested="10.0.17763.0" />
+    </Dependencies>
+
+    <Resources>
+        <Resource Language="x-generate"/>
+    </Resources>
+
+    <Applications>
+        <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="Messenger.UWP.App">
+            <uap:VisualElements
+                DisplayName="Messenger UWP"
+                Square150x150Logo="Assets\MediumTile.png"
+                Square44x44Logo="Assets\AppIcon.png"
+                Description="A Facebook Messenger UWP app adapted for Windows 10 PCs, tablets and phones"
+                BackgroundColor="transparent">
+                <uap:DefaultTile Wide310x150Logo="Assets\WideTile.png" Square71x71Logo="Assets\SmallTile.png" Square310x310Logo="Assets\BigTile.png">
+                    <uap:ShowNameOnTiles>
+                        <uap:ShowOn Tile="square150x150Logo"/>
+                        <uap:ShowOn Tile="wide310x150Logo"/>
+                        <uap:ShowOn Tile="square310x310Logo"/>
+                    </uap:ShowNameOnTiles>
+                </uap:DefaultTile >
+                <uap:SplashScreen Image="Assets\SplashScreen.png"  BackgroundColor="#ffffff"/>
+                <uap:LockScreen BadgeLogo="Assets\Badge.png" Notification="badgeAndTileText"/>
+            </uap:VisualElements>
+
+            <uap:ApplicationContentUriRules>
+                <uap:Rule Match="https://www.messenger.com/*" Type="include" WindowsRuntimeAccess="all" />
+            </uap:ApplicationContentUriRules>
+        </Application>
+    </Applications>
+
+    <Capabilities>
+        <Capability Name="internetClient" />
+    </Capabilities>
+</Package>

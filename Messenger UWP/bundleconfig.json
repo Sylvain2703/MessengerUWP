@@ -1,0 +1,25 @@
+[
+  {
+    "outputFileName": "Web/bundle.js",
+    "inputFiles": [
+      "JavaScript/helpers/*.js",
+      "JavaScript/messenger-pwa/*.js",
+      "JavaScript/messenger-pwa/views/*.js",
+      "JavaScript/index.js"
+    ],
+    "minify": {
+      "enabled": false,
+      "commentMode": "all"
+    }
+  },
+  {
+    "outputFileName": "Web/bundle.css",
+    "inputFiles": [
+      "CSS/**/*.css"
+    ],
+    "minify": {
+      "enabled": false,
+      "commentMode": "all"
+    }
+  }
+]

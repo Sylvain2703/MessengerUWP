@@ -1,0 +1,45 @@
+Ratios from Messenger-Source.svg:
+---------------------------------
+
+Messenger-AppIcon.svg       84%
+Messenger-Badge.svg         98%
+Messenger-Store.svg         90%
+Messenger-BigTile.svg       50%
+Messenger-WideTile.svg      55%
+Messenger-MediumTile.svg    54%
+Messenger-SmallTile.svg     65%
+
+
+________________________________________
+
+
+
+Used for Assets:
+----------------
+
+Messenger-SmallTile-White.svg
+-> SmallTile.scale-x.png
+
+Messenger-MediumTile-White.svg
+-> MediumTile.scale-x.png
+
+Messenger-WideTile-White.svg
+-> WideTile.scale-x.png
+
+Messenger-BigTile-White.svg
+-> BigTile.scale-x.png
+
+Messenger-AppIcon-White.svg
+-> AppIcon.scale-x.png
+-> AppIcon.targetsize-x.png
+
+Messenger-Badge-White.svg
+-> Badge.scale-x.png
+
+Messenger-Store.svg
+-> Store.scale-x.png
+-> AppIcon.targetsize-x_altform-unplated.png
+   (because unplated icons don't need large margins)
+
+Messenger-WideTile.svg
+-> SplashScreen.scale-x.png
