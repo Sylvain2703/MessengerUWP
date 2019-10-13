@@ -15,9 +15,6 @@ along with Messenger UWP.  If not, see <https://www.gnu.org/licenses/>. */
 
 
 /* Master/details container */
-._4sp8.master, ._4sp8.details {
-    display: block;
-}
 ._4sp8 {
     min-width: unset;
 }
