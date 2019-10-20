@@ -1,0 +1,36 @@
+# Continuous Integration (CI) to build Messenger UWP
+# using Visual Studio 2019 on Azure Pipelines.
+
+trigger:
+- develop
+pr:
+- develop
+
+# Pipeline name
+name: CI.$(Date:yyyy-MM-dd).$(Rev:r)
+
+# Global variables
+variables:
+  vmImage: windows-2019 # Windows Server 2019 with Visual Studio 2019
+  solutionFile: Messenger UWP.sln
+  certificateFile: MessengerUWP-Certificate.pfx
+  buildConfiguration: Release
+  appxPackageDir: $(build.artifactStagingDirectory)\AppxPackages
+
+# Jobs to build each platform
+jobs:
+- template: ./ci-azure-pipeline.single-platform.yml
+  parameters:
+    platform: x86
+
+- template: ./ci-azure-pipeline.single-platform.yml
+  parameters:
+    platform: x64
+
+- template: ./ci-azure-pipeline.single-platform.yml
+  parameters:
+    platform: ARM
+
+- template: ./ci-azure-pipeline.single-platform.yml
+  parameters:
+    platform: ARM64
