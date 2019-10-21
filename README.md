@@ -1,5 +1,8 @@
 # Messenger UWP (alpha)
 
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](/COPYING)
+[![Build Status](https://dev.azure.com/ssoft-org/MessengerUWP/_apis/build/status/Messenger%20UWP%20CI?branchName=develop)](https://dev.azure.com/ssoft-org/MessengerUWP/_build/latest?branchName=develop)
+
 Messenger UWP is a Universal Windows Platform app that lets you access **Facebook Messenger on Windows 10 PCs, tablets and phones**.
 
 This app is based on the Messenger website ([www.messenger.com](https://www.messenger.com)) by using a WebView and injecting some JavaScript and CSS code.
@@ -51,7 +54,7 @@ All the following features are adapted to run on Windows 10 Desktop and Windows 
 - Xbox support
 
 
-## Know issues
+## Known issues
 
 - Settings modals, some dialogs forms and bot cards are not mobile-friendly.
 - "New message" button need to be optimized for phones.

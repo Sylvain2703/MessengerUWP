@@ -1,0 +1,52 @@
+# An Azure Pipeline job to build Messenger UWP for the specified platform.
+
+parameters:
+  platform: ''
+
+jobs:
+- job: Build_${{ parameters.platform }}
+  displayName: Build ${{ parameters.platform }}
+  
+  pool:
+    vmImage: $(vmImage)
+  
+  steps:
+  # Download the certificate used to build the app
+  - task: DownloadSecureFile@1
+    displayName: Download the certificate
+    name: certificate
+    inputs:
+      secureFile: $(certificateFile)
+  
+  # Restore NuGet packages for the specified platform
+  # (We don't use the "NuGetCommand" task as packages depend on the platform)
+  - task: VSBuild@1
+    displayName: Restore NuGet packages
+    inputs:
+      solution: $(solutionFile)
+      configuration: $(buildConfiguration)
+      platform: ${{ parameters.platform }}
+      msbuildArgs: '/t:restore'
+  
+  # Build the app using the certificate and its password
+  - task: VSBuild@1
+    displayName: Build the app
+    inputs:
+      solution: $(solutionFile)
+      configuration: $(buildConfiguration)
+      platform: ${{ parameters.platform }}
+      msbuildArgs: '/p:AppxPackageDir="$(appxPackageDir)\\"
+                    /p:AppxBundle=Never
+                    /p:UapAppxPackageBuildMode=StoreUpload
+                    /p:AppxPackageSigningEnabled=true
+                    /p:PackageCertificateThumbprint=""
+                    /p:PackageCertificateKeyFile="$(certificate.secureFilePath)"
+                    /p:PackageCertificatePassword="$(certificatePassword)"'
+  
+  # Publish the app package to Build Artifact
+  - task: PublishBuildArtifacts@1
+    displayName: Publish to Build Artifact
+    inputs:
+      pathToPublish: $(appxPackageDir)
+      artifactName: AppPackages
+      parallel: true
