@@ -4,8 +4,7 @@
     "inputFiles": [
       "JavaScript/helpers/*.js",
       "JavaScript/messenger-pwa/*.js",
-      "JavaScript/messenger-pwa/views/*.js",
-      "JavaScript/index.js"
+      "JavaScript/messenger-pwa/views/*.js"
     ],
     "minify": {
       "enabled": false,
