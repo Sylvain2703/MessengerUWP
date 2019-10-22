@@ -218,8 +218,10 @@
     <None Include="JavaScript\messenger-pwa\version.js" />
     <None Include="JavaScript\messenger-pwa\viewport.js" />
     <None Include="CSS\cancel-media-queries.css" />
+    <None Include="CSS\dialogs.css" />
     <None Include="CSS\info-panel.css" />
     <None Include="CSS\master-details.css" />
+    <None Include="CSS\settings-panel.css" />
     <Compile Include="UserAgent\FakeUserAgent.cs" />
     <Compile Include="UserAgent\UserAgentHelper.cs" />
     <Compile Include="WebViewInjector.cs" />
