@@ -14,5 +14,18 @@
 // along with Messenger UWP.  If not, see <https://www.gnu.org/licenses/>.
 
 
+(function () {
+    // Set the viewport for mobile devices.
+    var meta = document.createElement("meta");
+    meta.name = "viewport";
+    meta.content = "width=device-width, initial-scale=1";
+    DOM.getByTag("head").appendChild(meta);
+
+    // As we change the user agent, we need to ensure that the CSS fixes for Edge are applied.
+    var bodyClassList = document.body.classList;
+    if (!bodyClassList.contains("edge"))
+        bodyClassList.add("edge");
+})();
+
 var MessengerPWA = {};
 MessengerPWA.Views = {};

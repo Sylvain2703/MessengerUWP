@@ -216,8 +216,8 @@
     <None Include="JavaScript\messenger-pwa\index.js" />
     <None Include="JavaScript\messenger-pwa\selectors.js" />
     <None Include="JavaScript\messenger-pwa\version.js" />
-    <None Include="JavaScript\messenger-pwa\viewport.js" />
     <None Include="CSS\cancel-media-queries.css" />
+    <None Include="CSS\cards.css" />
     <None Include="CSS\dialogs.css" />
     <None Include="CSS\info-panel.css" />
     <None Include="CSS\master-details.css" />
