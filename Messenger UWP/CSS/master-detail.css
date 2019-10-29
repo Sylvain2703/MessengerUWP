@@ -14,7 +14,7 @@ You should have received a copy of the GNU General Public License
 along with Messenger UWP.  If not, see <https://www.gnu.org/licenses/>. */
 
 
-/* Master/details container */
+/* Master/detail container */
 ._4sp8 {
     min-width: auto;
 }
@@ -28,8 +28,8 @@ along with Messenger UWP.  If not, see <https://www.gnu.org/licenses/>. */
     /* max-height: 100%; TODO: Usefull on v1? */
 }
 
-/* Details view only */
-._4sp8.details ._1enh {
+/* Detail view only */
+._4sp8.detail ._1enh {
     display: none;
 }
 
@@ -38,12 +38,12 @@ along with Messenger UWP.  If not, see <https://www.gnu.org/licenses/>. */
     max-width: 100%;
 }
 
-/* Remove separator between Master and details view */
-._4sp8.details ._1t2u {
+/* Remove separator between Master and detail view */
+._4sp8.detail ._1t2u {
     border-left: none;
 }
 
-/* Fix details view height when master view isn't displayed */
+/* Fix detail view height when master view isn't displayed */
 ._51l0, ._605a, ._2sdm, ._li, ._4sp8 {
     height: 100%;
 }

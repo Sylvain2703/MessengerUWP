@@ -16,12 +16,10 @@
 
 MessengerPWA.Selectors = {
     ROOT_CONTAINER: "_li",
-    MASTER_DETAILS_CONTAINER: "_4sp8",
+    MASTER_DETAIL_CONTAINER: "_4sp8",
 
     MASTER_VIEW: "_1enh",
     MASTER_VIEW_V2: "_7q1s",
-    CHAT_ITEM: "_1ht1",
-    SEARCH_RESULT_ITEM: "._29hk ._225b + ._29hl ._5l37",
 
     INFO_PANEL: "_4_j5",
     INFO_PANEL_CONTENT: "_4_j9",

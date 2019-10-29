@@ -56,10 +56,9 @@ All the following features are adapted to run on Windows 10 Desktop and Windows 
 
 ## Known issues
 
-- Settings modals, some dialogs forms and bot cards are not mobile-friendly.
-- "New message" button need to be optimized for phones.
 - Reactions, reply and forward to messages are not touch-friendly.
-- In some cases, keyboard navigation can cause problems.
+- In a thread, when a picture is too large, its preview isn't clipped away nicely.
+- When the informations panel of a thread is opened, keyboard navigation can cause problems.
 
 
 ## Installation
@@ -78,7 +77,11 @@ For developers:
 
 ## Changelog
 
-- Version 0.1.0: Initial alpha version
+- Version 0.2.0:
+  - Improve dialogs, settings and chatbot cards for small screens.
+  - Improve navigation between the master and detail view: navigation should work in all cases.
+  - Fix an issue where, on Messenger v2, a part of the back button was unexpectedly displayed (on devices with EdgeHTML < 16).
+- Version 0.1.0: Initial alpha version.
 
 
 ## License
