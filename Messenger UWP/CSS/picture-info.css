@@ -14,39 +14,14 @@ You should have received a copy of the GNU General Public License
 along with Messenger UWP.  If not, see <https://www.gnu.org/licenses/>. */
 
 
-/* Fix cards width on chatbots */
-@media (max-width: 950px) {
-    ._3idt {
-        width: 450px !important;
-    }
+/* Property item */
+._2zn1 {
+    line-height: normal !important;
+    height: auto !important;
+    padding: 8px 0px;
 }
 
-@media (max-width: 900px) {
-    ._3idt {
-        width: 400px !important;
-    }
-}
-
-@media (max-width: 850px) {
-    ._3idt {
-        width: 350px !important;
-    }
-}
-
-@media (max-width: 800px) {
-    ._3idt {
-        width: 300px !important;
-    }
-}
-
-@media (max-width: 750px) {
-    ._3idt {
-        width: 250px !important;
-    }
-}
-
-@media (max-width: 400px) {
-    ._3idt {
-        width: 200px !important;
-    }
+/* Property item content (title, details) */
+._2zn1 > * {
+    margin: 3px 0px;
 }

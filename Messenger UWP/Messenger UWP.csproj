@@ -210,9 +210,8 @@
     <None Include="JavaScript\helpers\navigation.js" />
     <None Include="JavaScript\helpers\polyfill.js" />
     <None Include="JavaScript\helpers\react-internal.js" />
-    <None Include="JavaScript\messenger-pwa\views\chat-list.js" />
     <None Include="JavaScript\messenger-pwa\views\info-panel.js" />
-    <None Include="JavaScript\messenger-pwa\views\master-details.js" />
+    <None Include="JavaScript\messenger-pwa\views\master-detail.js" />
     <None Include="JavaScript\messenger-pwa\index.js" />
     <None Include="JavaScript\messenger-pwa\selectors.js" />
     <None Include="JavaScript\messenger-pwa\version.js" />
@@ -220,7 +219,8 @@
     <None Include="CSS\cards.css" />
     <None Include="CSS\dialogs.css" />
     <None Include="CSS\info-panel.css" />
-    <None Include="CSS\master-details.css" />
+    <None Include="CSS\master-detail.css" />
+    <None Include="CSS\picture-info.css" />
     <None Include="CSS\settings-panel.css" />
     <Compile Include="UserAgent\FakeUserAgent.cs" />
     <Compile Include="UserAgent\UserAgentHelper.cs" />
