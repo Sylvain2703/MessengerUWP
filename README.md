@@ -2,6 +2,7 @@
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](/COPYING)
 [![Build Status](https://dev.azure.com/ssoft-org/MessengerUWP/_apis/build/status/Messenger%20UWP%20CI?branchName=develop)](https://dev.azure.com/ssoft-org/MessengerUWP/_build/latest?branchName=develop)
+![PRs: welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
 
 Messenger UWP is a Universal Windows Platform app that lets you access **Facebook Messenger on Windows 10 PCs, tablets and phones**.
 
@@ -77,6 +78,7 @@ For developers:
 
 ## Changelog
 
+- Version 0.2.1: Fix an issue where the app crashed due to [an internal change in React](https://github.com/facebook/react/pull/18377).
 - Version 0.2.0:
   - Improve dialogs, settings and chatbot cards for small screens.
   - Improve navigation between the master and detail view: navigation should work in all cases.
@@ -86,6 +88,6 @@ For developers:
 
 ## License
 
-Copyright (C) 2019 Sylvain Bruyère
+Copyright (C) 2019-2020 Sylvain Bruyère
 
 This repository is licensed with the [GNU General Public License v3.0 only (GPL-3.0-only)](/COPYING).
