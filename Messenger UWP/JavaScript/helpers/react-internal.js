@@ -1,5 +1,5 @@
 // This file is part of Messenger UWP.
-// Copyright (C) 2019 Sylvain Bruyère
+// Copyright (C) 2019-2020 Sylvain Bruyère
 //
 // Messenger UWP is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -27,7 +27,7 @@ var ReactInternal = (function () {
         var keys = Object.keys(domNode);
         for (var keyIndex in keys) {
             var key = keys[keyIndex];
-            if (key.startsWith("__reactInternalInstance$")) {
+            if (key.startsWith("__reactFiber$") || key.startsWith("__reactInternalInstance$")) {
                 return domNode[key];
             }
         }

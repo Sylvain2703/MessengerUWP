@@ -11,7 +11,7 @@
     <AssemblyName>Messenger UWP</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
-    <TargetPlatformVersion Condition="'$(TargetPlatformVersion)' == ''">10.0.17763.0</TargetPlatformVersion>
+    <TargetPlatformVersion Condition="'$(TargetPlatformVersion)' == ''">10.0.18362.0</TargetPlatformVersion>
     <TargetPlatformMinVersion Condition="'$(Platform)' != 'ARM64'">10.0.14393.0</TargetPlatformMinVersion>
     <TargetPlatformMinVersion Condition="'$(Platform)' == 'ARM64'">10.0.16299.0</TargetPlatformMinVersion>
     <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
@@ -24,11 +24,12 @@
     <AppxBundlePlatforms>x86|x64|arm|arm64</AppxBundlePlatforms>
     <AppInstallerUpdateFrequency>0</AppInstallerUpdateFrequency>
     <AppInstallerCheckForUpdateFrequency>OnApplicationRun</AppInstallerCheckForUpdateFrequency>
-    <AppxBundle>Auto</AppxBundle>
+    <AppxBundle>Never</AppxBundle>
     <AppxPackageSigningEnabled>True</AppxPackageSigningEnabled>
     <GenerateTestArtifacts>True</GenerateTestArtifacts>
     <HoursBetweenUpdateChecks>0</HoursBetweenUpdateChecks>
-    <PackageCertificateThumbprint>1C9927E5ABB02C8F8DBFCB1CE1B18F6B4D4F001D</PackageCertificateThumbprint>
+    <PackageCertificateThumbprint>13911CFE64EE28278849D6070A76B921F9D46FE2</PackageCertificateThumbprint>
+    <PackageCertificateKeyFile>Messenger UWP_TemporaryKey.pfx</PackageCertificateKeyFile>
     <AppxPackageSigningTimestampDigestAlgorithm>SHA256</AppxPackageSigningTimestampDigestAlgorithm>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
@@ -144,7 +145,7 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
-    <None Include="Package.StoreAssociation.xml" />
+    <None Include="Messenger UWP_TemporaryKey.pfx" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\AppIcon.scale-100.png" />

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!-- This file is part of Messenger UWP.
-Copyright (C) 2019 Sylvain Bruyère
+Copyright (C) 2019-2020 Sylvain Bruyère
 
 Messenger UWP is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -20,7 +20,7 @@ along with Messenger UWP.  If not, see <https://www.gnu.org/licenses/>. -->
     xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
     IgnorableNamespaces="uap mp">
 
-    <Identity Name="53330SSoft.MessengerUWP" Publisher="CN=C2230194-F9C4-4811-936E-C2BD4208FD18" Version="0.2.0.0" />
+    <Identity Name="53330SSoft.MessengerUWP" Publisher="CN=C2230194-F9C4-4811-936E-C2BD4208FD18" Version="0.2.1.0" />
     <mp:PhoneIdentity PhoneProductId="59435353-1be9-48a9-aaba-cfb9634454a1" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
     <Properties>
