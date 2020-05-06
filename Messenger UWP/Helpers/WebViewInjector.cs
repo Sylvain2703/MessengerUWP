@@ -16,12 +16,11 @@
 
 using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Threading.Tasks;
 using Windows.Storage;
 using Windows.UI.Xaml.Controls;
 
-namespace Messenger.UWP
+namespace Messenger.UWP.Helpers
 {
     public class WebViewInjector
     {

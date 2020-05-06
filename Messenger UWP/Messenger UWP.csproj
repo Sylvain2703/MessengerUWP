@@ -128,6 +128,8 @@
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
   </PropertyGroup>
   <ItemGroup>
+    <PRIResource Include="Strings\en-US\Resources.resw" />
+    <PRIResource Include="Strings\fr-FR\Resources.resw" />
     <AppxManifest Include="Package.appxmanifest">
       <SubType>Designer</SubType>
     </AppxManifest>
@@ -216,6 +218,7 @@
     <None Include="JavaScript\messenger-pwa\index.js" />
     <None Include="JavaScript\messenger-pwa\selectors.js" />
     <None Include="JavaScript\messenger-pwa\version.js" />
+    <None Include="CSS\acrylic.css" />
     <None Include="CSS\cancel-media-queries.css" />
     <None Include="CSS\cards.css" />
     <None Include="CSS\dialogs.css" />
@@ -223,9 +226,12 @@
     <None Include="CSS\master-detail.css" />
     <None Include="CSS\picture-info.css" />
     <None Include="CSS\settings-panel.css" />
-    <Compile Include="UserAgent\FakeUserAgent.cs" />
-    <Compile Include="UserAgent\UserAgentHelper.cs" />
-    <Compile Include="WebViewInjector.cs" />
+    <Compile Include="Converters\BooleanToVisibilityConverter.cs" />
+    <Compile Include="Helpers\SplashScreenExtension.cs" />
+    <Compile Include="Helpers\UserAgentHelper.cs" />
+    <Compile Include="Helpers\WebViewInjector.cs" />
+    <Compile Include="ViewModels\MainViewModel.cs" />
+    <Compile Include="ViewModels\ViewModelBase.cs" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
@@ -234,6 +240,11 @@
     <PackageReference Include="BuildBundlerMinifier">
       <Version>3.1.430</Version>
     </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <SDKReference Include="WindowsMobile, Version=10.0.18362.0">
+      <Name>Windows Mobile Extensions for the UWP</Name>
+    </SDKReference>
   </ItemGroup>
   <PropertyGroup Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0'">
     <VisualStudioVersion>14.0</VisualStudioVersion>

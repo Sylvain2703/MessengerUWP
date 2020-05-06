@@ -54,7 +54,7 @@ along with Messenger UWP.  If not, see <https://www.gnu.org/licenses/>. */
     /* Conversation items */
         /* Unread conversation */
         ._1ht3._1ht1, ._1ht1._1ht2 {
-            background-color: #ffffff;
+            background: none;
             transition: none;
         }
 
@@ -138,7 +138,7 @@ along with Messenger UWP.  If not, see <https://www.gnu.org/licenses/>. */
 
         /* Unread conversation */
         ._1ht3._1ht1._6zk9, ._1ht1._6zk9._1ht2 {
-            background-color: #ffffff;
+            background: none;
             transition: none;
         }
 

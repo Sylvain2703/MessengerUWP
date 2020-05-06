@@ -1,0 +1,40 @@
+/* This file is part of Messenger UWP.
+Copyright (C) 2019 Sylvain Bruyère
+
+Messenger UWP is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, version 3.
+
+Messenger UWP is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Messenger UWP.  If not, see <https://www.gnu.org/licenses/>. */
+
+
+/* Cancel background */
+body._z4_, ._2sdm, ._4sp8 {
+    background: none !important;
+}
+
+/* Background on master view header and detail view */
+._6-xk, ._36ic, ._1t2u {
+    background: #ffffff;
+}
+
+/* Transparent background for selected thread on Messenger V1 */
+._1ht1._1ht2 {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Force banner shadow on Messenger V2 */
+._3_e8::before {
+    opacity: 1 !important;
+}
+
+/* Search bar on Messenger V2 */
+._5iwm._6-_b {
+    padding: 12px 16px !important;
+}

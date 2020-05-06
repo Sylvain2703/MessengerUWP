@@ -17,10 +17,14 @@
 using System.Runtime.InteropServices;
 using System.Text;
 
-namespace Messenger.UWP
+namespace Messenger.UWP.Helpers
 {
     public static class UserAgentHelper
     {
+        // Google Chrome 75
+        public const string Chrome = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36";
+
+
         private const int URLMON_OPTION_USERAGENT = 0x10000001;
 
         [DllImport("urlmon.dll", CharSet = CharSet.Ansi, ExactSpelling = true)]

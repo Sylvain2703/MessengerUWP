@@ -20,11 +20,34 @@ along with Messenger UWP.  If not, see <https://www.gnu.org/licenses/>. -->
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    xmlns:converters="using:Messenger.UWP.Converters"
+    mc:Ignorable="d">
 
-    <Grid x:Name="Container">
-        <ProgressRing x:Name="Progress" Width="50" Height="50"/>
-    </Grid>
-    
+    <Page.Resources>
+        <ResourceDictionary>
+            <converters:BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
+        </ResourceDictionary>
+    </Page.Resources>
+
+    <Canvas x:Name="Canvas">
+        <Image x:Name="SplashScreenImage" Source="/Assets/SplashScreen.png"
+               Visibility="{x:Bind ViewModel.ShowIcon, Mode=OneWay, Converter={StaticResource BooleanToVisibilityConverter}}"/>
+
+        <Grid x:Name="Container">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <!-- The WebView is created in code behind and added here. -->
+
+            <ProgressRing Grid.Row="1" IsActive="{x:Bind ViewModel.IsLoading, Mode=OneWay}" Width="50" Height="50" Margin="0,40" Foreground="{StaticResource MessengerColor}" />
+
+            <StackPanel Grid.Row="1" Margin="16" VerticalAlignment="Center"
+                    Visibility="{x:Bind ViewModel.HasFailed, Mode=OneWay, Converter={StaticResource BooleanToVisibilityConverter}}">
+                <TextBlock x:Uid="LoadingError" FontSize="18" TextAlignment="Center" TextWrapping="WrapWholeWords" />
+                <Button x:Uid="Retry" Margin="0,12,0,0" HorizontalAlignment="Center" Click="RetryClick" />
+            </StackPanel>
+        </Grid>
+    </Canvas>
 </Page>
