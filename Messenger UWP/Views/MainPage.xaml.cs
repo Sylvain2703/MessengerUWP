@@ -24,7 +24,7 @@ using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Media;
 
-namespace Messenger.UWP
+namespace Messenger.UWP.Views
 {
     public sealed partial class MainPage : Page
     {
@@ -82,6 +82,7 @@ namespace Messenger.UWP
             webView.DefaultBackgroundColor = Colors.Transparent;
             webView.NavigationStarting += WebViewNavigationStarting;
             webView.NavigationCompleted += WebViewNavigationCompleted;
+            webView.PermissionRequested += WebViewPermissionRequested;
 
             Grid.SetRowSpan(webView, 2);
             webView.SetBinding(WebView.VisibilityProperty, new Binding
@@ -106,6 +107,16 @@ namespace Messenger.UWP
 
             if (ViewModel != null)
                 ViewModel.State = e.IsSuccess ? NavigationState.Succeeded : NavigationState.Failed;
+        }
+
+        private void WebViewPermissionRequested(WebView sender, WebViewPermissionRequestedEventArgs e)
+        {
+            var uriHost = e.PermissionRequest.Uri.Host;
+            if (uriHost == "www.messenger.com" || uriHost == "messenger.com")
+            {
+                if (e.PermissionRequest.PermissionType == WebViewPermissionType.Media)
+                    e.PermissionRequest.Allow();
+            }
         }
 
         private void RetryClick(object sender, RoutedEventArgs e)
