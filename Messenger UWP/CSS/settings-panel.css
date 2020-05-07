@@ -27,11 +27,11 @@ along with Messenger UWP.  If not, see <https://www.gnu.org/licenses/>. */
 
 /* Status description */
 ._6cs7 {
-    margin-right: 0px;
+    margin-right: 0px !important;
 }
 
 /* Emojis container */
 ._3-s_ {
-    margin: 0px;
-    width: auto;
+    margin: 0px !important;
+    width: auto !important;
 }

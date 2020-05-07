@@ -137,14 +137,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="MainPage.xaml">
+    <Page Include="Views\MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="MainPage.xaml.cs">
+    <Compile Include="Views\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <None Include="Messenger UWP_TemporaryKey.pfx" />
@@ -207,6 +207,14 @@
     <Content Include="Web\bundle.js" />
     <Content Include="Web\bundle.css" />
     <None Include="bundleconfig.json" />
+    <None Include="CSS\acrylic.css" />
+    <None Include="CSS\cancel-media-queries.css" />
+    <None Include="CSS\cards.css" />
+    <None Include="CSS\dialogs.css" />
+    <None Include="CSS\info-panel.css" />
+    <None Include="CSS\master-detail.css" />
+    <None Include="CSS\picture-info.css" />
+    <None Include="CSS\settings-panel.css" />
     <None Include="JavaScript\helpers\alert.js" />
     <None Include="JavaScript\helpers\dispatcher.js" />
     <None Include="JavaScript\helpers\dom.js" />
@@ -218,14 +226,6 @@
     <None Include="JavaScript\messenger-pwa\index.js" />
     <None Include="JavaScript\messenger-pwa\selectors.js" />
     <None Include="JavaScript\messenger-pwa\version.js" />
-    <None Include="CSS\acrylic.css" />
-    <None Include="CSS\cancel-media-queries.css" />
-    <None Include="CSS\cards.css" />
-    <None Include="CSS\dialogs.css" />
-    <None Include="CSS\info-panel.css" />
-    <None Include="CSS\master-detail.css" />
-    <None Include="CSS\picture-info.css" />
-    <None Include="CSS\settings-panel.css" />
     <Compile Include="Converters\BooleanToVisibilityConverter.cs" />
     <Compile Include="Helpers\SplashScreenExtension.cs" />
     <Compile Include="Helpers\UserAgentHelper.cs" />

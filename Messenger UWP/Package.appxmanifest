@@ -65,5 +65,7 @@ along with Messenger UWP.  If not, see <https://www.gnu.org/licenses/>. -->
 
     <Capabilities>
         <Capability Name="internetClient" />
+        <DeviceCapability Name="microphone"/>
+        <DeviceCapability Name="webcam"/>
     </Capabilities>
 </Package>

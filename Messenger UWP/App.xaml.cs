@@ -15,6 +15,7 @@
 
 
 using Messenger.UWP.Helpers;
+using Messenger.UWP.Views;
 using System;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
@@ -109,6 +110,7 @@ namespace Messenger.UWP
             if (IsStatusBarAvailable)
             {
                 var statusBar = StatusBar.GetForCurrentView();
+                statusBar.BackgroundOpacity = 1;
                 statusBar.BackgroundColor = (Color)Resources["MessengerColor"];
                 statusBar.ForegroundColor = Colors.White;
             }

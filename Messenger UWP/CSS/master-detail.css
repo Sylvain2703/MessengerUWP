@@ -16,7 +16,7 @@ along with Messenger UWP.  If not, see <https://www.gnu.org/licenses/>. */
 
 /* Master/detail container */
 ._4sp8 {
-    min-width: auto;
+    min-width: initial;
 }
 
 /* Master view only */
@@ -46,4 +46,12 @@ along with Messenger UWP.  If not, see <https://www.gnu.org/licenses/>. */
 /* Fix detail view height when master view isn't displayed */
 ._51l0, ._605a, ._2sdm, ._li, ._4sp8 {
     height: 100%;
+}
+
+/* Show the Messenger icon when there is nothing in detail view */
+._1ut7 {
+	background-image: url("ms-appx-web:///Assets/SplashScreen.png");
+	background-repeat: no-repeat;
+	background-position: 50%;
+	background-size: 50%;
 }
