@@ -6,6 +6,8 @@
 
 Messenger UWP is a Universal Windows Platform app that lets you access **Facebook Messenger on Windows 10 PCs, tablets and phones**.
 
+![Screenshot](/Docs/Screenshot.png)
+
 This app is based on the Messenger website ([www.messenger.com](https://www.messenger.com)) by using a WebView and injecting some JavaScript and CSS code.
 
 Because Facebook provides at least two versions of [www.messenger.com](https://www.messenger.com), we also have two know versions. Currently, we don't know why some users have access to Messenger v1 and some others to Messenger v2 (probably AB testing).
@@ -29,22 +31,22 @@ We really need feedback as there is probably some difference with [www.messenger
 
 All the following features are adapted to run on Windows 10 Desktop and Windows 10 Mobile. Other features can also works but aren't fully tested.
 
-- Send and receive text messages, attachments, stickers, reactions and GIFs
+- Send and receive text messages, voice messages, attachments, stickers, reactions and GIFs
 - Group and bot conversations
+- Take photos
 - See who is online and which messages have been read
 - Customize chat colors and nicknames
 - Native back button support
+- Acrylic effect (part of Fluent Design)
 - Continuum support
 
 
 ## Roadmap
 
 - Dark theme
-- Acrylic effect (part of Fluent Design)
-- Notifications + Live Tiles + Badges (complicated)
-- Send voice messages (to test)
-- Calls and video chats + in group (to test)
-- Take photos and record videos (to test)
+- Notifications + Live Tiles + Badges
+- Calls and video chats ([see issue #4](https://github.com/Sylvain2703/MessengerUWP/issues/4))
+- Record videos (doesn't seem to work)
 - Play games with friends (to test)
 - Add filters, masks and effects to your video chats (complicated)
 - Watch Stories and add your own (complicated)
@@ -78,6 +80,12 @@ For developers:
 
 ## Changelog
 
+- Version 0.3.0:
+  - Add an acrylic effect for the master view background.
+  - Improve the loading screen and add a retry button.
+  - Allow taking photos and recording audio messages.
+  - Add zoom support when viewing pictures (using a touchpad or a touchscreen).
+  - Improve the picture album and the settings dialog for small screens.
 - Version 0.2.1: Fix an issue where the app crashed due to [an internal change in React](https://github.com/facebook/react/pull/18377).
 - Version 0.2.0:
   - Improve dialogs, settings and chatbot cards for small screens.
