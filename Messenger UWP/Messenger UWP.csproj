@@ -213,7 +213,9 @@
     <None Include="CSS\dialogs.css" />
     <None Include="CSS\info-panel.css" />
     <None Include="CSS\master-detail.css" />
+    <None Include="CSS\picture-album.css" />
     <None Include="CSS\picture-info.css" />
+    <None Include="CSS\picture-viewer.css" />
     <None Include="CSS\settings-panel.css" />
     <None Include="JavaScript\helpers\alert.js" />
     <None Include="JavaScript\helpers\dispatcher.js" />

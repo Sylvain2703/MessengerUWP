@@ -1,0 +1,62 @@
+/* This file is part of Messenger UWP.
+Copyright (C) 2019 Sylvain Bruyère
+
+Messenger UWP is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, version 3.
+
+Messenger UWP is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Messenger UWP.  If not, see <https://www.gnu.org/licenses/>. */
+
+
+/* Picture album container */
+._3bl- {
+    min-width: initial;
+}
+
+/* Back button */
+._3bm2 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Picture list */
+._3xo8 {
+    width: auto;
+    height: calc(100% - 70px);
+}
+
+/* Fix picture width */
+@media (max-width: 900px) {
+    ._3bly {
+        width: 18.1%;
+        padding-bottom: 18.1%;
+    }
+}
+
+@media (max-width: 750px) {
+    ._3bly {
+        width: 23.1%;
+        padding-bottom: 23.1%;
+    }
+}
+
+@media (max-width: 600px) {
+    ._3bly {
+        width: 31.4%;
+        padding-bottom: 31.4%;
+    }
+}
+
+@media (max-width: 450px) {
+    ._3bly {
+        width: 48.1%;
+        padding-bottom: 48.1%;
+    }
+}

@@ -1,0 +1,48 @@
+/* This file is part of Messenger UWP.
+Copyright (C) 2019 Sylvain Bruyère
+
+Messenger UWP is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, version 3.
+
+Messenger UWP is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Messenger UWP.  If not, see <https://www.gnu.org/licenses/>. */
+
+
+/* Disable zoom and scroll everywhere */
+body._z4_ {
+    overflow: hidden;
+    -ms-content-zooming: none;
+}
+
+/* Enable zoom on the picture area */
+._4-og {
+    overflow: auto;
+    -ms-content-zooming: zoom;
+    -ms-content-zoom-limit: 100% 400%;
+    -ms-overflow-style: none;
+}
+
+/* Correctly places the picture area */
+._4-of {
+    display: block !important;
+}
+
+/* Hide the useless span used to center the picture (centering is now done with flex) */
+._4-oh {
+    display: none !important;
+}
+
+/* Center the picture in the picture area */
+._4-od {
+    display: flex !important;
+    margin: 0px !important;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
