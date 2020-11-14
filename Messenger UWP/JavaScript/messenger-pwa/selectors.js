@@ -15,7 +15,7 @@
 
 
 MessengerPWA.Selectors = {
-    ROOT_CONTAINER: "_li",
+    ROOT_CONTAINER: "._2sdm > ._li",
     MASTER_DETAIL_CONTAINER: "_4sp8",
 
     MASTER_VIEW: "_1enh",

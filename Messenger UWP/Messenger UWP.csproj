@@ -211,6 +211,7 @@
     <None Include="CSS\cancel-media-queries.css" />
     <None Include="CSS\cards.css" />
     <None Include="CSS\dialogs.css" />
+    <None Include="CSS\hide-broken-features.css" />
     <None Include="CSS\info-panel.css" />
     <None Include="CSS\master-detail.css" />
     <None Include="CSS\picture-album.css" />

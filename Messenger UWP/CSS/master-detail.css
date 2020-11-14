@@ -48,6 +48,11 @@ along with Messenger UWP.  If not, see <https://www.gnu.org/licenses/>. */
     height: 100%;
 }
 
+/* Fix the chat box that was covered by the container of GIF/audio recording/camera buttons on mobile */
+._5irm._7mkm {
+    z-index: 400;
+}
+
 /* Show the Messenger icon when there is nothing in detail view */
 ._1ut7 {
 	background-image: url("ms-appx-web:///Assets/SplashScreen.png");
