@@ -18,7 +18,7 @@ MessengerPWA.Views.MasterDetail = (function () {
     var self = {};
 
     var container = DOM.getByClass(MessengerPWA.Selectors.MASTER_DETAIL_CONTAINER);
-    var root = DOM.getByClass(MessengerPWA.Selectors.ROOT_CONTAINER);
+    var root = DOM.getBySelector(MessengerPWA.Selectors.ROOT_CONTAINER);
     var rootComponent = null;
 
     /**
